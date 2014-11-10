@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Infested Citizen" namedescription="a infested citizen" race="venom" experience="821" speed="230" manacost="630">
+	<health now="420" max="420"/>
+	<look type="299" corpse="8951"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-105" max="-210"/>
+		<attack name="PoisonFrontBack" interval="2000" chance="45" min="-35" max="-75"/>
+		<attack name="poison" interval="3000" chance="50" length="8" spread="0" min="-120" max="-160">
+		<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+	</attacks>
+	<defenses armor="252" defense="126">
+	<defense name="speed" interval="1000" chance="15" speedchange="200" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-20"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="100"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="4000"/><!-- gold coin -->
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+		<item id="2216" chance="400"/><!--health ring-->
+		<item id="10557" chance="1200"/><!--misc-->
+		<item id="2651" chance="700"/><!--coat-->
+		<item id="2182" chance="1000"/>
+	</loot>
+</monster>

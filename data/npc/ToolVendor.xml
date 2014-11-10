@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Odd Dan" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="153" head="57" body="59" legs="114" feet="0" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Heya |PLAYERNAME|. I sell tools and more, want to {trade}?"/>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="backpack, 1988, 100;shovel, 2554, 50;rope, 2120, 50;blank rune, 2666, 5"/>
+	</parameters>
+</npc>

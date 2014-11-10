@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mr Know it All" script="help.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="132" head="0" body="114" legs="0" feet="76" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I can {help} you understand this world."/>
+	</parameters>
+<voices>
+		<voice text="Speak to me if you need help!" interval2="1000" margin="1" yell="no"/>
+		<voice text="I know a lot about this world." interval2="1000" margin="1" yell="no"/>
+		<voice text="I remember when I was an adventurer like you." interval2="1000" margin="1" yell="no"/>
+		<voice text="Feel free to ask me anything about this realm." interval2="1000" margin="1" yell="no"/>
+    </voices>
+</npc>

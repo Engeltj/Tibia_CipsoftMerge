@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Outlaw" nameDescription="an outlaw" race="blood" experience="301" speed="260" manacost="390">
+	<health now="260" max="260"/>
+	<look type="137" head="113" body="120" legs="114" feet="132" corpse="6081"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-65" max="-130"/>
+	</attacks>
+	<defenses armor="104" defense="52"/>
+	<elements>
+		<element firePercent="20"/>
+		<element earthPercent="10"/>
+		<element energyPercent="5"/>
+		<element icePercent="-15"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="100">
+	</voices>
+	<loot>
+	</loot>
+</monster>

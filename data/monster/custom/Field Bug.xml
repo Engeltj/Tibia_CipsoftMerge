@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Field Bug" namedescription="a field bug" race="blood" experience="67" speed="234" manacost="195">
+	<health now="130" max="130"/>
+	<look type="45" corpse="5990"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-32" max="-65"/>
+		<attack name="poisonfield" interval="1000" chance="13" range="7" radius="1" target="1">
+			<attribute key="shooteffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="52" defense="26"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="20" chance="21000"/><!-- gold coin -->
+		<item id="2679" countmax="3" chance="6600"/><!-- cherry -->
+	</loot>
+</monster>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ryhally Scout" namedescription="a ryhally scout" race="blood" experience="1712" speed="528" manacost="900">
+	<health now="6000" max="6000"/>
+	<look type="146" head="0" body="0" legs="97" feet="0" addons="2" mount="405" corpse="6080"/>
+	<targetchange interval="2000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-150" max="-300"/>
+		<attack name="physical" interval="700" chance="30" range="5" min="-146" max="-174">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+	</attacks>
+	<defenses armor="240" defense="120"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<voices interval="4000" chance="50">
+		<voice sentence="INVADERS!!"/>
+		<voice sentence="HOOOOAAAAAA"/>
+	</voices>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

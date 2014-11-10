@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cane Toad" nameDescription="a cane toad" race="blood" experience="1" speed="104" manacost="30">
+	<health now="20" max="20"/>
+	<look type="222" corpse="6077"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-5" max="-10"/>
+	</attacks>
+	<defenses armor="3" defense="2"/>
+	<elements>
+		<element earthPercent="25"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="2000" chance="9">
+		<voice sentence="Meep!"/>
+	</voices>
+	<loot>
+		<item id="2696" chance="50000" /><!-- cheese -->
+		
+	</loot>
+</monster>

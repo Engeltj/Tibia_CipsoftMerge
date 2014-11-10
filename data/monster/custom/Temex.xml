@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Temex" nameDescription="a temex" race="blood" experience="7" speed="190" emblem="red" manacost="75" >
+	<health now="50" max="50"/>
+	<look type="76" head="0" body="0" legs="0" feet="0" corpse="6018"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+		<!-- <flag skull="3" /> -->
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-12" max="-25"/>
+		<attack name="poison" interval="2000" chance="30" range="3" min="-10" max="-18">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poison" interval="1500" chance="25" range="0" radius="2" target="0" min="-3" max="-8">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="10">
+		<defense name="speed" interval="1000" chance="70" speedchange="30" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="20"  min="6" max="10">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="outfit" interval="10000" chance="15" monster="pig" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+	</voices>
+	<loot>
+		<item id="2148" countmax="15" chance="22000" /> <!-- gold -->
+		<item id="2403" chance="3000" /> <!-- lvl1 knife -->
+		<item id="2382" chance="3000" /> <!-- lvl1 club -->
+	</loot>
+</monster>

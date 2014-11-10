@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Arachnidae" namedescription="a arachnidae" race="blood" experience="6217" speed="434" manacost="1695">
+	<health now="11300" max="11300"/>
+	<look type="219" corpse="6060"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-282" max="-565"/>
+				<attack name="poison" interval="1000" chance="20" min="-275" max="-510"/>
+		<attack name="lifedrain" interval="2000" chance="15" radius="3" target="0" min="-70" max="-330">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-60" max="-490">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="452" defense="226"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<summons maxSummons="3">
+		<summon name="(level 45) Spiderling" interval="2000" chance="18" max="2"/>
+	</summons>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

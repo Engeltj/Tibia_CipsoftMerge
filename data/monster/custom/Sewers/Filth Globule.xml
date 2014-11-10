@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Filth Globule" namedescription="a filth globule" race="venom" experience="172" speed="140" manacost="300">
+	<health now="200" max="200"/>
+	<look type="314" corpse="9962"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-50" max="-80"/>
+		<attack name="poison" interval="2500" chance="60" range="7" target="1" min="-20" max="-72">
+		<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="120" defense="60"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="55" chance="25500"/>
+		<item id="2461" chance="500"/> 
+		<item id="2182" chance="800"/>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

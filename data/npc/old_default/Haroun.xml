@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Haroun" script="Haroun.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="80" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="0,0,0;"/>
+		<parameter key="shop_buyable" value="0,0,0;"/>
+	</parameters>
+</npc>

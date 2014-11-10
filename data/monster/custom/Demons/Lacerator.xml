@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lacerator" namedescription="a lacerator" race="blood" experience="596" speed="480" manacost="540">
+	<health now="3600" max="3600"/>
+	<look type="321" corpse="9919"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-90" max="-180"/>
+		<attack name="Lacerator" interval="2000" chance="30" range="5" target="0" min="-20" max="-50"/>
+		<attack name="death" interval="2000" chance="35" range="7" radius="4" target="1" min="-10" max="-50">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="144" defense="72">
+	<defense name="speed" interval="1000" chance="20" speedchange="500" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+	<defense name="healing" interval="1000" chance="15" min="40" max="120">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+		<item id="2148" countmax="95" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="55" chance="15000"/><!-- gold coin -->
+		<item id="2216" chance="200"/><!--health ring-->
+	</loot>
+</monster>

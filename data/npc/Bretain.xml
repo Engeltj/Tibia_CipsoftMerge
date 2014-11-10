@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Bretain" script="quest_horses.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="128" head="19" body="126" legs="76" feet="131" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. My name is Bretain. I have work for you, type {quest} for details."/>
+	</parameters>
+</npc>

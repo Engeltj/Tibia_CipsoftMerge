@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ryhally Warrior" namedescription="a ryhally warrior" race="blood" experience="1892" speed="334" manacost="945">
+	<health now="6300" max="6300"/>
+	<look type="150" head="98" body="76" legs="130" feet="0" addons="1" corpse="6080"/>
+	<targetchange interval="2000" chance="15"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" chance="75" min="-185" max="-370"/>
+		<attack name="physical" interval="1500" chance="35" range="4" min="-156" max="-194">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="8"  radius="4" target="0" min="-180" max="-295">
+			<attribute key="areaEffect" value="redspark"/>
+	 	</attack>
+	</attacks>
+	<defenses armor="248" defense="124">
+		<defense name="healing" interval="1000" chance="15" min="113" max="350">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<voices interval="4000" chance="20">
+		<voice sentence="EEEEEEEEEEEEEEEEEEEYYYAAAAAA."/>
+		<voice sentence="HOOOOAAAAAA"/>
+	</voices>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

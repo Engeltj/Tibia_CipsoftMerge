@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wretched Hound" namedescription="a wretched hound" race="blood" experience="466" speed="272" manacost="480">
+	<health now="3200" max="3200"/>
+	<look type="101" corpse="6030"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-80" max="-160"/>
+		<attack name="WretchedHound" interval="2000" chance="30" range="5" target="0" min="-40" max="-90"/>
+	</attacks>
+	<defenses armor="128" defense="64">
+	<defense name="outfit" interval="2000" chance="9" range="7" target="0" monster="hellspawn" duration="5000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="20" speedchange="500" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="55" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="35" chance="15000"/><!-- gold coin -->
+		<item id="2227"  chance="15000"/><!-- rotten meat -->
+		<item id="2448" chance="200"/><!-- studdedclub -->
+		<item id="2229" chance="21000"/><!-- skull -->
+		<item id="8704" countmax="2" chance="5000"/><!-- hp pot -->
+	</loot>
+</monster>

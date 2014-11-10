@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cephalotus" namedescription="a cephalotus" race="venom" experience="2702" speed="158" manacost="1125">
+	<health now="750" max="750"/>
+	<look type="120" corpse="6047"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-187" max="-375"/>
+		<attack name="cephalotus" interval="1000" chance="12" min="-40" max="-130"/>
+		<attack name="speed" interval="1000" chance="34" range="7" speedchange="-850" duration="5000">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="10" range="7" target="1" min="-150" max="-300">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+	</attacks>
+	<defenses armor="300" defense="150"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="4" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="30000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2478" chance="990"/><!--brass legs-->
+		<item id="2518" chance="290"/><!--bonelords shield-->
+		<item id="2790" countmax="5" chance="39000"/><!-- mushroom -->
+		<item id="2149" countmax="4" chance="1000"/><!-- emerald -->
+		<item id="5953" chance="2400"/><!-- misc -->
+	</loot>
+</monster>

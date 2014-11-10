@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rogue Guard" namedescription="a rogue guard" race="blood" experience="631" speed="282" manacost="555">
+	<health now="3700" max="3700"/>
+	<look type="542" head="0" body="38" legs="96" feet="79" addons="1" corpse="6080"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-92" max="-185"/>
+		<attack name="physical" interval="2000" chance="20" min="-60" max="-107" radius="4">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="physical" interval="1300" chance="35" range="7" min="-57" max="-140">
+			<attribute key="shootEffect" value="bolt"/>
+		</attack>
+	</attacks>
+	<defenses armor="148" defense="74"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="45" chance="15000"/><!-- gold coin -->
+		<item id="2649" chance="1000"/><!-- leath legs -->
+		<item id="2455" chance="750"/><!-- xbow -->
+		<item id="2398" chance="450"/><!-- mace -->
+		<item id="2376" chance="450"/><!-- sword -->
+			<item id="2456" chance="790"/><!--bow-->
+		<item id="12449" chance="1800"/><!-- misc -->
+		<item id="2148" countmax="35" chance="15000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="9000"/><!-- plat coin -->
+		<item id="2666" chance="11750"/><!-- meat -->
+	</loot>
+</monster>

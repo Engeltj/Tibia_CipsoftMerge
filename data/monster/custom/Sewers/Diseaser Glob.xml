@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Diseaser Glob" namedescription="a diseaser glob" race="venom" experience="137" speed="140" manacost="270">
+	<health now="180" max="180"/>
+	<look type="19" corpse="1496"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-45" max="-70"/>
+		<attack name="SmallPoisonExplosion" interval="3000" chance="50" min="-25" max="-90"/>
+	</attacks>
+	<defenses armor="108" defense="54"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element poisonPercent="100"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity poison="1"/>
+	</immunities>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

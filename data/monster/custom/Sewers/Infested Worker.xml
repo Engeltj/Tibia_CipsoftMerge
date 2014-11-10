@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Infested Worker" namedescription="a infested worker" race="venom" experience="904" speed="236" manacost="660">
+	<health now="440" max="440"/>
+	<look type="247" corpse="6516"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-110" max="-220"/>
+		<attack name="melee" interval="2500" chance="50" min="-220" max="-260" poison="20"/>
+		<attack name="melee" interval="3500" chance="20" min="-260" max="-360"/>
+		<attack name="drunk" interval="3000" chance="35" range="5" target="1">
+		<attribute key="shootEffect" value="whirlwindclub"/>
+		<attribute key="areaEffect" value="stun"/>
+		</attack>
+	</attacks>
+	<defenses armor="264" defense="132"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-20"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="100"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2152" countmax="4" chance="4400"/><!-- gold coin -->
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+			<item id="2456" chance="1590"/><!--bow-->
+		<item id="2216" chance="450"/><!--health ring-->
+		<item id="10557" chance="1200"/><!--misc-->
+		<item id="2417" chance="750"/><!--club-->
+	</loot>
+</monster>

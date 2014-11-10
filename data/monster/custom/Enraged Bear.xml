@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Enraged Bear" namedescription="a enraged bear" race="blood" experience="191" speed="350" manacost="315">
+	<health now="210" max="210"/>
+	<look type="16" corpse="5975"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1300" min="-40" max="-135"/>
+		<attack name="physical" interval="1000" chance="30" radius="3" min="-20" max="-100">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="84" defense="42"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="5896" chance="2000"/><!-- bear paw -->
+		<item id="2671" countmax="3" chance="25000"/><!-- ham -->
+		<item id="2666" countmax="4" chance="46750"/><!-- meat -->
+		<item id="2148" countmax="77" chance="20000"/><!-- gold -->
+	</loot>
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Jim Maynor" script="quest_mines.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="132" head="97" body="21" legs="76" feet="19" addons="3" corpse="2212"/>
+	<parameters>
+		<parameter key="message_greet" value="Welcome |PLAYERNAME|. I have a {quest} for you if you would like, or we can just {trade}" />
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="pick, 2553, 6000; dwarven pickaxe, 4874, 12000; ice pick, 4856, 30000; durable pick, 11421, 400000"/>
+	</parameters>
+</npc>

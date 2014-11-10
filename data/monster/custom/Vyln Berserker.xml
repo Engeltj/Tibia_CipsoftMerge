@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vyln Berserker" namedescription="a vyln berserker" race="blood" experience="562" speed="278" manacost="525">
+	<health now="450" max="350"/>
+	<look type="281" corpse="7926"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-87" max="-275"/>
+		<attack name="melee" interval="1000" chance="35" min="-107" max="-275"/>
+		<attack name="physical" interval="2000" chance="27" range="5" min="-90" max="-110">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+	</attacks>
+	<defenses armor="140" defense="70"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element holyPercent="-10"/>
+		<element physicalPercent="20"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="65" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="45" chance="15000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="9000"/><!-- plat coin -->
+		<item id="2386" chance="400"/><!-- axe -->
+		<item id="3974" chance="600"/><!-- sword -->
+		<item id="10606" chance="1800"/><!-- misc -->
+		<item id="2666" countmax="3" chance="11750"/><!-- meat -->
+	</loot>
+</monster>

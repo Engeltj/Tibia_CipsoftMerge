@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grave Dweller" namedescription="a grave dweller" race="blood" experience="3656" speed="382" manacost="1305">
+	<health now="8700" max="8700"/>
+	<look type="322" corpse="9923"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-217" max="-435"/>
+		<attack name="physical" interval="1000" chance="30" length="4" spread="2" min="-170" max="-250">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="death" interval="2000" chance="15" range="6" target="1" min="-180" max="-300">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortArea"/>
+		</attack>
+	</attacks>
+	<defenses armor="348" defense="174">
+	<defense name="speed" interval="1500" chance="20" speedchange="500" duration="6000">
+			<attribute key="areaEffect" value="redspark"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element holyPercent="-35"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element deathPercent="90"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="6" chance="9000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2666" countmax="4" chance="57000"/><!-- meat -->	
+		<item id="5741" chance="650"/><!--skull helm-->
+		<item id="2553" chance="970"/><!--pick-->
+	</loot>
+</monster>

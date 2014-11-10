@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Undying Worker" namedescription="a undying worker" race="blood" experience="562" speed="278" manacost="525">
+	<health now="3500" max="3500"/>
+	<look type="33" corpse="5972"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-87" max="-175"/>
+		<attack name="UndyingWorker" interval="2000" chance="35" range="7" target="0" min="-55" max="-155"/>
+		<attack name="death" interval="2000" chance="35" range="7"  target="1" min="-60" max="-90">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="140" defense="70"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+		<item id="2148" countmax="95" chance="15000"/><!-- gold coin -->
+		<item id="2148" countmax="55" chance="15000"/><!-- gold coin -->
+		<item id="2216" chance="200"/><!--health ring-->
+		<item id="2230" chance="49750"/><!-- bone -->
+	</loot>
+</monster>

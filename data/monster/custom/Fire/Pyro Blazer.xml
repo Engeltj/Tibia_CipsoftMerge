@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Pyro Blazer" namedescription="a pyro blazer" race="blood" experience="1831" speed="332" manacost="930">
+	<health now="6200" max="6200"/>
+	<look type="242" corpse="8964"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-155" max="-310"/>
+		<attack name="PyroBlazerAtk" interval="2000" chance="25" min="-30" max="-230"/>
+		<attack name="firefield" interval="3000" chance="34" range="7" radius="3" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="firecondition" interval="1000" chance="12" radius="6" target="0" min="-50" max="-200">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="248" defense="124"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="4" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="8704" countmax="4" chance="9000"/><!-- hp pot -->
+		<item id="7620" countmax="4" chance="6000"/><!-- mana pot -->
+		<item id="2191" chance="850"/><!--wand of dragonbreath-->
+		<item id="5468" chance="1000"/><!--firebug-->
+	</loot>
+</monster>

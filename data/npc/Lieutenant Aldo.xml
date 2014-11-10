@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="(Quester) Lieutenant Aldo" script="chain_hailbrook.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="268" head="38" body="114" legs="114" feet="114" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I have a series of quests for you, type {quest} for details."/>
+	</parameters>
+	<!-- <voices>
+		<voice text="Level 20? Speak to me about a promotion (5k)" interval2="100" margin="1" yell="no"/>
+    </voices> -->
+</npc>

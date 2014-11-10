@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Pollywog" namedescription="a pollywog" race="blood" experience="1129" speed="306" manacost="735">
+	<health now="490" max="490"/>
+	<look type="222" corpse="6077"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-122" max="-245"/>
+		<attack name="poison" interval="2000" chance="23" length="8" spread="3" min="-65" max="-115">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="weakparalyze" interval="3000" chance="45" target="1"/>
+	</attacks>
+	<defenses armor="196" defense="98"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-25"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

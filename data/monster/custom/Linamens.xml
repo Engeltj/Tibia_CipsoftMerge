@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Linamens" nameDescription="a linamens" race="blood" experience="1712" speed="220" manacost="900">
+	<health now="600" max="600"/>
+	<look type="282" corpse="7930"/>
+	<targetchange interval="5000" chance="16"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-150" max="-300"/>
+	</attacks>
+	<defenses armor="7" defense="9"/>
+	<voices interval="5000" chance="9">
+		<voice sentence="Hmmm, turtles"/>
+		<voice sentence="Hmmm, dogs"/>
+		<voice sentence="Hmmm, wormds"/>
+		<voice sentence="Groar"/>
+		<voice sentence="Gruntz!"/>
+	</voices>
+	<loot>
+    <item id="2120" chance="8175" /><!-- rope -->
+    
+    <item id="5097" chance="5425" /><!-- mango -->
+    <item id="1987" chance="100000"><!-- bag -->
+        <inside>
+            <item id="7963" chance="575" /><!-- marlin -->
+            <item id="2170" chance="575" /><!-- silver amulet -->
+        </inside>
+    </item>
+</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>

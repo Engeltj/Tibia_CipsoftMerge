@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mine Keeper" namedescription="a mine keeper" race="blood" experience="3571" speed="380" manacost="1290">
+	<health now="860" max="860"/>
+	<look type="496" corpse="17416"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-215" max="-430"/>
+		<attack name="minekeeper" interval="1500" chance="25" min="-60" max="-135"/>
+		<attack name="physical" interval="2000" chance="35" radius="3" min="-180" max="-290">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="344" defense="172">
+	<defense name="healing" interval="2000" chance="27" min="50" max="150">
+			<attribute key="areaEffect" value="blueshimmer"/>
+			</defense> 
+	</defenses>	
+	<elements>
+		<element earthPercent="8"/>
+		<element icePercent="-10"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="15"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="5" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="44000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2431" chance="550"/><!--stone cutter axe-->
+		<item id="2530" chance="850"/><!--copper shield-->
+		<item id="2553" chance="670"/><!--pick-->
+		<item id="12448" chance="1700"/><!-- misc -->
+			<item id="2456" chance="790"/><!--bow-->
+	</loot>
+</monster>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hard Ancient Tower" namedescription="a tower" race="blood" speed="0" experience="0" manacost="600000">
+	<health now="100000" max="100000"/>
+	<look typeex="12383" corpse="13972"/>
+	<targetchange interval="2000" chance="50"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="energy" interval="3000" chance="100" range="5" min="-240" max="-280">
+			<attribute key="shootEffect" value="earth"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="50" range="3" radius="4" target="0" min="-140" max="-180">
+			<attribute key="areaEffect" value="holydamage"/>
+		</attack>
+	</attacks>
+	<defenses armor="0" defense="0">
+		<defense name="Red Light" interval="5000" chance="100"/>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<houses>
+	<house name="Items" houseid="1" entryx="2462" entryy="2412" entryz="7" rent="0" townid="1" size="1592" />
+	<house name="JCPenis Den #1" houseid="3" entryx="2273" entryy="2222" entryz="6" rent="0" townid="1" size="21" />
+	<house name="JCPenis Den #2" houseid="5" entryx="2272" entryy="2224" entryz="6" rent="0" townid="1" size="59" />
+	<house name="Felps Flat #1" houseid="6" entryx="2211" entryy="2225" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #2" houseid="7" entryx="2222" entryy="2221" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #3" houseid="8" entryx="2226" entryy="2221" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #4" houseid="9" entryx="2230" entryy="2207" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #5" houseid="10" entryx="2226" entryy="2207" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #6" houseid="11" entryx="2222" entryy="2207" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #7" houseid="12" entryx="2218" entryy="2207" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #8" houseid="13" entryx="2214" entryy="2207" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Felps Flat #9" houseid="14" entryx="2214" entryy="2221" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #10" houseid="15" entryx="2218" entryy="2221" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #11" houseid="16" entryx="2222" entryy="2221" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #12" houseid="17" entryx="2226" entryy="2221" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #13" houseid="18" entryx="2230" entryy="2221" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #14" houseid="19" entryx="2230" entryy="2207" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #15" houseid="20" entryx="2226" entryy="2207" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #16" houseid="21" entryx="2222" entryy="2207" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #17" houseid="22" entryx="2218" entryy="2207" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felps Flat #18" houseid="23" entryx="2214" entryy="2207" entryz="4" rent="0" townid="1" size="36" />
+	<house name="Felp's Mansion" houseid="24" entryx="2210" entryy="2214" entryz="4" rent="0" townid="1" size="291" />
+	<house name="Berk Storage #1" houseid="25" entryx="2257" entryy="2202" entryz="6" rent="0" townid="1" size="95" />
+	<house name="Berk Storage #2" houseid="26" entryx="2252" entryy="2202" entryz="6" rent="0" townid="1" size="67" />
+	<house name="Berk Storage #3" houseid="27" entryx="2247" entryy="2207" entryz="6" rent="0" townid="1" size="40" />
+	<house name="Berk Storage #4" houseid="28" entryx="2252" entryy="2209" entryz="6" rent="0" townid="1" size="40" />
+	<house name="Berk Storage #5" houseid="29" entryx="2262" entryy="2209" entryz="6" rent="0" townid="1" size="40" />
+	<house name="Berk Storage #6" houseid="30" entryx="2268" entryy="2207" entryz="6" rent="0" townid="1" size="46" />
+	<house name="Berk Storage #7" houseid="31" entryx="2252" entryy="2202" entryz="5" rent="0" townid="1" size="129" />
+	<house name="Berk Storage #8" houseid="32" entryx="2247" entryy="2207" entryz="5" rent="0" townid="1" size="80" />
+	<house name="Berk Storage #9" houseid="33" entryx="2252" entryy="2209" entryz="5" rent="0" townid="1" size="87" />
+	<house name="Berk Storage #10" houseid="34" entryx="2262" entryy="2209" entryz="5" rent="0" townid="1" size="85" />
+	<house name="Berk Storage #11" houseid="35" entryx="2268" entryy="2207" entryz="5" rent="0" townid="1" size="88" />
+	<house name="Berk's Mansion" houseid="36" entryx="2257" entryy="2202" entryz="5" rent="0" townid="1" size="341" />
+	<house name="Eastwood Flat #1" houseid="37" entryx="2289" entryy="2232" entryz="5" rent="0" townid="1" size="95" />
+	<house name="Eastwood Flat #2" houseid="38" entryx="2302" entryy="2225" entryz="6" rent="0" townid="1" size="8" />
+	<house name="Eastwood Flat #3" houseid="39" entryx="2301" entryy="2222" entryz="6" rent="0" townid="1" size="12" />
+	<house name="Eastwood Flat #4" houseid="40" entryx="2305" entryy="2223" entryz="6" rent="0" townid="1" size="15" />
+	<house name="Eastwood Flat #5" houseid="41" entryx="2307" entryy="2225" entryz="6" rent="0" townid="1" size="24" />
+	<house name="Eastwood Flat #6" houseid="42" entryx="2303" entryy="2226" entryz="5" rent="0" townid="1" size="12" />
+	<house name="Eastwood Flat #7" houseid="43" entryx="2306" entryy="2221" entryz="5" rent="0" townid="1" size="9" />
+	<house name="Eastwood Flat #8" houseid="44" entryx="2304" entryy="2226" entryz="5" rent="0" townid="1" size="28" />
+	<house name="Eastwood Flat #9" houseid="45" entryx="2287" entryy="2215" entryz="6" rent="0" townid="1" size="15" />
+	<house name="Eastwood Flat #10" houseid="46" entryx="2293" entryy="2211" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Eastwood Flat #11" houseid="47" entryx="2298" entryy="2215" entryz="6" rent="0" townid="1" size="15" />
+	<house name="Eastwood Flat #12" houseid="48" entryx="2290" entryy="2209" entryz="5" rent="0" townid="1" size="21" />
+	<house name="Eastwood Flat #13" houseid="49" entryx="2294" entryy="2209" entryz="5" rent="0" townid="1" size="21" />
+	<house name="Eastwood Flat #14" houseid="50" entryx="2290" entryy="2208" entryz="4" rent="0" townid="1" size="8" />
+	<house name="Eastwood Flat #15" houseid="51" entryx="2295" entryy="2208" entryz="4" rent="0" townid="1" size="8" />
+	<house name="Westdale Flat #1" houseid="52" entryx="2243" entryy="2239" entryz="6" rent="0" townid="1" size="35" />
+	<house name="Westdale Flat #2" houseid="53" entryx="2229" entryy="2239" entryz="6" rent="0" townid="1" size="25" />
+	<house name="Westdale Flat #3" houseid="54" entryx="2233" entryy="2236" entryz="5" rent="0" townid="1" size="25" />
+	<house name="Westdale Flat #4" houseid="55" entryx="2235" entryy="2234" entryz="5" rent="0" townid="1" size="100" />
+	<house name="Westdale Flat #5" houseid="56" entryx="2221" entryy="2245" entryz="6" rent="0" townid="1" size="18" />
+	<house name="Westdale Flat #6" houseid="57" entryx="2213" entryy="2250" entryz="6" rent="0" townid="1" size="52" />
+	<house name="Westdale Flat #7" houseid="58" entryx="2218" entryy="2253" entryz="6" rent="0" townid="1" size="39" />
+	<house name="Westdale Flat #8" houseid="59" entryx="2231" entryy="2260" entryz="6" rent="0" townid="1" size="86" />
+	<house name="Westdale Flat #9" houseid="60" entryx="2232" entryy="2267" entryz="6" rent="0" townid="1" size="60" />
+	<house name="Westdale Flat #10" houseid="61" entryx="2220" entryy="2267" entryz="6" rent="0" townid="1" size="46" />
+	<house name="JCPenis Den #3" houseid="62" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="9" />
+	<house name="JCPenis Den #4" houseid="63" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="22" />
+	<house name="JCPenis Den #5" houseid="64" entryx="0" entryy="0" entryz="0" rent="0" townid="1" size="34" />
+	<house name="Brooktop Flat #1" houseid="65" entryx="2257" entryy="2227" entryz="4" rent="0" townid="1" size="37" />
+	<house name="Brooktop Apt #1" houseid="66" entryx="2258" entryy="2226" entryz="4" rent="0" townid="1" size="5" />
+	<house name="Brooktop Apt #2" houseid="67" entryx="2256" entryy="2233" entryz="4" rent="0" townid="1" size="8" />
+</houses>

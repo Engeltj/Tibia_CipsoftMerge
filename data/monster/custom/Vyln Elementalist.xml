@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vyln Elementalist" namedescription="a vyln elementalist" race="blood" experience="596" speed="280" manacost="540">
+	<health now="360" max="360"/>
+	<look type="282" corpse="7930"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-90" max="-180"/>
+		<attack name="energy" interval="1000" chance="20" range="5" min="-10" max="-50">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="ice" interval="1000" chance="20" range="5" min="-10" max="-50">
+			<attribute key="shootEffect" value="ice"/>
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+		<attack name="poison" interval="3000" chance="27" length="6" spread="3" min="-40" max="-90">
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+	</attacks>
+	<defenses armor="144" defense="72">
+	<defense name="healing" interval="2000" chance="27" min="30" max="70">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="85" chance="15000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="9000"/><!-- plat coin -->
+		<item id="7620" countmax="2" chance="3000"/><!-- mana pot -->
+		<item id="2148" countmax="45" chance="15000"/><!-- gold coin -->
+		<item id="2666" chance="11750"/><!-- meat -->
+		<item id="2190" chance="750"/><!-- wandofvortex -->
+		<item id="10606" chance="1900"/><!-- misc -->
+		<item id="2216" chance="300"/><!--health ring-->
+	</loot>
+</monster>

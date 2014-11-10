@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mine Raider" namedescription="a mine raider" race="blood" experience="704" speed="286" manacost="585">
+	<health now="3900" max="3900"/>
+	<look type="289" head="0" body="113" legs="58" feet="38" addons="3" corpse="6080"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-97" max="-195"/>
+		<attack name="MineRaider1" interval="1000" chance="25" range="7" target="1" min="-35" max="-105">
+			<attribute key="shootEffect" value="cake"/>
+		</attack>
+		<attack name="MineRaider2" interval="2000" chance="25" range="3" target="0" min="-25" max="-95"/>
+	</attacks>
+	<defenses armor="156" defense="78"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="8704" countmax="2" chance="10000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="7000"/><!-- mana pot -->
+		<item id="2148" countmax="99" chance="25000"/><!-- gold coin -->
+		<item id="2152" countmax="3" chance="3000"/><!-- gold coin -->
+		<item id="2216" chance="400"/><!--health ring-->
+		<item id="2655" chance="400"/><!--red robne arm 36-->
+		<item id="12449" chance="1900"/><!-- misc -->
+	</loot>
+</monster>

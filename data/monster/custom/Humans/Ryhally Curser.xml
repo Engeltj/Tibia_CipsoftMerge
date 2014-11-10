@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ryhally Curser" namedescription="a ryhally curser" race="blood" experience="1954" speed="336" manacost="960">
+	<health now="6400" max="6400"/>
+	<look type="158" head="38" body="0" legs="115" feet="79" addons="2" corpse="6080"/>
+	<targetchange interval="2000" chance="13"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="60"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-160" max="-320"/>
+		<attack name="ryhally_curse" interval="1000" chance="50" range="7" target="1" min="-5" max="-15">
+		</attack>
+		<!--<attack name="energy" interval="1000" chance="17" range="4" target="1" min="-10" max="-130">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>-->
+		<attack name="outfit" interval="3500" chance="30" monster="green frog" duration="6000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="248" defense="124">
+	<defense name="healing" interval="1000" chance="15" min="113" max="350">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<summons maxSummons="2">
+		<summon name="Kheper" interval="2000" chance="10" max="2"/>
+	</summons>
+		<voices interval="4000" chance="50">
+		<voice sentence="EEEEEEEEEEEEEEEEEEEYYYAAAAAA."/>
+		<voice sentence="KALNEH!!"/>
+		<voice sentence="HOOOOAAAAAA"/>
+	</voices>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

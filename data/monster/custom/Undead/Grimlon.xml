@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grimlon" namedescription="a grimlon" race="blood" experience="3571" speed="380" manacost="1290">
+	<health now="8600" max="8600"/>
+	<look type="18" corpse="5976"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-215" max="-430"/>
+		<attack name="grimlon_target" interval="1000" chance="25" range="7" target="1" min="-100" max="-220"/>
+		<attack name="death" interval="1000" chance="20" length="8" spread="0" min="-40" max="-250">
+			<attribute key="areaEffect" value="mortArea"/>
+		</attack>
+	</attacks>
+	<defenses armor="344" defense="172">
+	<defense name="healing" interval="2000" chance="20" min="80" max="158">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element holyPercent="-35"/>
+		<element icePercent="-8"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="10"/>
+		<element deathPercent="90"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="6" chance="9000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2666" countmax="4" chance="57000"/><!-- meat -->
+		<item id="2544" countmax="15" chance="20000"/><!-- arrows -->	
+		<item id="2185" chance="450"/><!--necro rod-->
+		<item id="2468" chance="870"/><!--studded legs-->
+	</loot>
+</monster>

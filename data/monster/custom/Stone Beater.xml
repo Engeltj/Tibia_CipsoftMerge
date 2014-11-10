@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Stone Beater" namedescription="a stone beater" race="blood" experience="3487" speed="378" manacost="1275">
+	<health now="850" max="850"/>
+	<look type="494" corpse="17407"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-212" max="-425"/>
+		<attack name="physical" interval="2000" chance="28" range="5" min="-150" max="-280">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="21" length="5" spread="2" min="-140" max="-200">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="340" defense="170"/>
+	<elements>
+		<element earthPercent="9"/>
+		<element icePercent="-10"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="15"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="5" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2422" chance="650"/><!--iron hammer-->
+		<item id="2642" chance="850"/><!--sandals-->
+		<item id="2553" chance="670"/><!--pick-->
+		<item id="12448" chance="1600"/><!-- misc -->
+	</loot>
+</monster>

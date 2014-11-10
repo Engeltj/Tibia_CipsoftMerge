@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sigmodon" nameDescription="a sigmodon" race="blood" experience="2" speed="106" manacost="45">
+	<health now="30" max="30"/>
+	<look type="21" corpse="5964"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<script>
+		<event name="QuestsKill"/>
+	</script> 
+	<attacks>
+		<attack name="melee" interval="1000" min="-7" max="-15"/>
+	</attacks>
+	<defenses armor="3" defense="2"/>
+	<elements>
+		<element earthPercent="25"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="2000" chance="9">
+		<voice sentence="Meep!"/>
+	</voices>
+	<loot>
+		<item id="2696" chance="50000" /><!-- cheese -->
+		<item id="2148" countmax="8" chance="23000"/>
+		<item id="2403" chance="2000" /> <!-- lvl1 knife -->
+		<item id="2382" chance="2000" /> <!-- lvl1 club -->
+		
+	</loot>
+</monster>

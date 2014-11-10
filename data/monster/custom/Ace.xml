@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ace" namedescription="an ace" race="blood" experience="532" speed="354" manacost="345">
+	<health now="330" max="330"/>
+	<look type="73" corpse="6080"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-157" max="-315"/>
+		<attack name="physical" interval="2000" chance="25" range="7" min="-150" max="-200">
+			<attribute key="shootEffect" value="arrow"/>
+		</attack>
+	</attacks>
+	<defenses armor="115" defense="50"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<loot>	
+		<item id="2050" chance="20000"/><!-- torch -->
+		<item id="2684" countmax="2" chance="10000"/> <!--carrot -->
+		<item id="2148" countmax="55" chance="15000"/><!-- gold coin -->
+		<item id="2456" chance="2000"/><!-- bow -->
+		<item id="2544" countmax="24" chance="4000"/><!-- arrow -->
+		<item id="2379" chance="1200" /> <!-- dagger -->
+		<item id="12449" chance="1000"/><!-- misc -->	
+		<item id="8704" countmax="2" chance="2000"/><!-- hp pot -->				
+	</loot>
+</monster>

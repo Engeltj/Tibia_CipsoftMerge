@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Stinger" namedescription="a stinger" race="blood" experience="991" speed="300" manacost="690">
+	<health now="460" max="460"/>
+	<look type="44" corpse="5989"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-115" max="-230"/>
+		<attack name="poison" interval="1000" chance="13" range="7" target="1" min="-45" max="-75">
+			<attribute key="shooteffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="184" defense="92"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="25"/>
+	</elements>
+	<loot>
+		<item id="5902" chance="3650"/> <!-- honeycomb -->
+	</loot>
+</monster>

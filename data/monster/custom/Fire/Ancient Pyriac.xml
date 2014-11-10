@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ancient Pyriac" namedescription="a ancient pyriac" race="blood" experience="2017" speed="338" manacost="975">
+	<health now="6500" max="6500"/>
+	<look type="491" corpse="17332"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-162" max="-325"/>
+		<attack name="melee" interval="5000" chance="8" min="-362" max="-465"/>
+		<attack name="AncientPyriac" interval="3000" chance="25" min="-80" max="-230"/>
+		<attack name="physical" interval="3000" chance="50" length="8" spread="0" min="-140" max="-290">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="260" defense="130">
+	<defense name="healing" interval="1000" chance="15" min="90" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="15" speedchange="200" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="4" chance="8000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="8704" countmax="4" chance="9000"/><!-- hp pot -->
+		<item id="7620" countmax="4" chance="6000"/><!-- mana pot -->
+		<item id="2216" chance="1000"/><!--health ring-->
+		<item id="2513" chance="950"/><!--battleshield-->
+		<item id="2191" chance="850"/><!--wand of dragonbreath-->
+		<item id="2468" chance="950"/><!--studded legs-->
+	</loot>
+</monster>

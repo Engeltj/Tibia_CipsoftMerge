@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Burrower" namedescription="a burrower" race="undead" experience="2702" speed="458" manacost="1125">
+	<health now="7500" max="7500"/>
+	<look type="398" corpse="13501"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-187" max="-375"/>
+		<attack name="physical" interval="3000" chance="35" length="5" spread="2" target="0" min="-125" max="-205">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="paralyze" interval="3000" chance="30" range="7" target="1"/>
+	</attacks>
+	<defenses armor="300" defense="150">
+		<defense name="invisible" interval="1000" chance="10" duration="9000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="17" min="50" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

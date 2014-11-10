@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nelomom" nameDescription="a nelomom" race="blood" experience="407" speed="160" manacost="450">
+	<health now="300" max="300"/>
+	<look type="116" corpse="6043"/>
+	<targetchange interval="2000" chance="9"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-75" max="-150"/>
+	</attacks>
+	<defenses armor="18" defense="14">
+		<defense name="speed" interval="2000" chance="25" speedchange="80" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element earthPercent="10"/>
+		<element energyPercent="5"/>
+		<element icePercent="-15"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="2000" chance="9">
+		<voice sentence="Hugah!"/>
+		<voice sentence="Ungh! Ungh!"/>
+		<voice sentence="Huaauaauaauaa!"/>
+	</voices>
+	<loot>
+    <item id="2200" chance="1000" /><!-- protection amulet -->
+    
+	
+	
+    <item id="2676" countmax="12" chance="5000" /><!-- banana -->
+    <item id="2513" chance="3000" /><!-- battle shield -->
+    <item id="5883" countmax="3" chance="1500" /><!-- ape fur -->
+    <item id="1987" chance="100000"><!-- bag -->
+        <inside>
+            <item id="12427" chance="5000" /><!-- kongra's shoulderpad -->
+            <item id="7618" chance="1000" /><!-- health potion -->
+            <item id="2166" chance="1000" /><!-- power ring -->
+            <item id="2209" chance="1000" /><!-- club ring -->
+        </inside>
+    </item>
+</loot>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</monster>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Priest" namedescription="a dark priest" race="blood" experience="3742" speed="384" manacost="1320">
+	<health now="9800" max="9800"/>
+	<look type="209" corpse="6080"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-220" max="-440"/>
+		<attack name="darkpriest" interval="1000" chance="10" min="-120" max="-280"/>
+		<attack name="darkpriest_target" interval="1800" chance="18" range="8" min="-130" max="-350"/>
+		<attack name="manadrain" interval="3000" chance="13" range="7" min="-80" max="-300"/>
+		<attack name="energy" interval="3000" chance="30" length="6" spread="0" min="-20" max="-160">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="death" interval="3000" chance="42" length="8" spread="0" min="-120" max="-360">
+			<attribute key="areaEffect" value="mortArea"/>
+		</attack>
+	</attacks>
+	<defenses armor="352" defense="176">
+		<defense name="outfit" interval="2000" chance="9" range="7" target="0" monster="Tortured Soul" duration="5000">
+			<attribute key="areaeffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="50" min="60" max="88">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="40"/>
+		<element icePercent="40"/>
+		<element energyPercent="40"/>
+		<element firePercent="70"/>
+		<element physicalPercent="-10"/>
+		<element poisonPercent="50"/>
+	</elements>
+	<summons maxSummons="2">
+		<summon name="Lacerator" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item id="2152" countmax="5" chance="7800"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="13756" chance="890"/><!--magic cap, fire resist-->
+		<item id="8704" countmax="4" chance="7000"/><!-- hp pot -->
+		<item id="2260" countmax="5" chance="18750"/><!-- blank rune -->		
+		<item id="7620" countmax="6" chance="9000"/><!-- mana pot -->
+		<item id="2185" chance="640"/><!--necrorod-->
+		<item id="7730" chance="740"/><!--blue legs-->
+	</loot>
+</monster>

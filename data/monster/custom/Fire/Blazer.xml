@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Blazer" namedescription="a blazer" race="fire" experience="1177" speed="260" manacost="750">
+	<health now="5000" max="5000"/>
+	<look type="49" corpse="8964"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-125" max="-250"/>
+		<attack name="FireExplosionWaveTargeted" interval="1000" chance="25" range="7" target="1" min="-55" max="-85">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="25" range="7" radius="0" target="1" min="-55" max="-115">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="200" defense="100"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="3" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="2216" chance="750"/><!--health ring-->
+		<item id="2000" chance="1500"> -- red bp	
+			<inside>
+				<item id="8844" chance="25000" countmax="8" /> -- jalapeno
+				<item id="2156" chance="3500" countmax="1" /> -- red gem
+				<item id="2152" chance="35000" countmax="5" /> -- plat coin
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Rogue Commander" namedescription="a rogue commander" race="blood" experience="947" speed="298" manacost="675">
+	<health now="8500" max="8500"/>
+	<look type="542" head="114" body="57" legs="94" feet="79" addons="3" corpse="6080"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-112" max="-225"/>
+		<attack name="roguecommander" interval="2000" chance="20" min="-60" max="-90"/>
+		<attack name="roguecommander2" interval="1500" chance="15" range="5" target="1" min="-45" max="-95"/>
+		<attack name="physical" interval="3000" chance="20" min="-70" max="-137" radius="3">
+		<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="230" defense="140">
+			<defense name="healing" interval="5000" chance="25" min="7s0" max="250">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>	
+	<elements>
+		<element earthPercent="20"/>
+		<element icePercent="20"/>
+		<element energyPercent="20"/>
+		<element firePercent="20"/>
+		<element physicalPercent="20"/>
+		<element poisonPercent="20"/>
+	</elements>
+	<loot>
+		<item id="12449" chance="1500"/><!-- misc -->
+	</loot>
+</monster>

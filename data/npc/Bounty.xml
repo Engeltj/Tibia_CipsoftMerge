@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Bounty" script="bounty.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="146" head="39" body="115" legs="119" feet="132" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I may {list} bounties, or give you a {capture} rune."/>
+	</parameters>
+	<!-- <voices>
+		<voice text="Level 20? Speak to me about a promotion (5k)" interval2="100" margin="1" yell="no"/>
+    </voices> -->
+</npc>

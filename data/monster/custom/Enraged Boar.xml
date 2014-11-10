@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Enraged Boar" namedescription="a enraged boar" race="blood" experience="154" speed="346" manacost="285">
+	<health now="190" max="190"/>
+	<look type="380" corpse="13308"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="700" min="-47" max="-95"/>
+		<attack name="melee" interval="3000" chance="30" min="-80" max="-150"/>
+	</attacks>
+	<defenses armor="76" defense="38"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+	<item id="2148" countmax="57" chance="20000"/><!-- gold -->
+		<item id="2666" countmax="4" chance="15000"/><!-- meat -->
+	</loot>
+</monster>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Alleria" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="138" head="57" body="59" legs="40" feet="76" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. I sell archery equipment, want to {trade}?"/>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_sellable" value="crossbow,2455,150;bow,2456,130"/>
+		<parameter key="shop_buyable" value="crossbow,2455,900;bow,2456,500;spear,2389,10;poison arrow,2545,4;bolt,2543,2;arrow,2544,2;sniper arrow,7364,6;power bolt,2547,6"/>
+	</parameters>
+</npc>

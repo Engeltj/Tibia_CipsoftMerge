@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tainted Slime" namedescription="a tainted slime" race="venom" experience="211" speed="145" manacost="330">
+	<health now="220" max="220"/>
+	<look type="315" corpse="9960"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-55" max="-100"/>
+		<attack name="death" interval="1500" chance="40" range="5" target="1" min="-30" max="-72">
+		<attribute key="shootEffect" value="death"/>
+		<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="17" range="7" radius="2" target="1" speedchange="-600" duration="15000">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+	</attacks>
+	<defenses armor="132" defense="66"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+	</immunities>
+	<loot>
+	<item id="2148" countmax="60" chance="25500"/>
+		<item id="2461" chance="500" /> <!--secondhelmet-->
+		<item id="2182" chance="800"/>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

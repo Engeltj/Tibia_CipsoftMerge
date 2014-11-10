@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Pyriac Beastling" namedescription="a pyriac beastling" race="blood" experience="1486" speed="320" manacost="840">
+	<health now="5600" max="5600"/>
+	<look type="492" corpse="17336"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-140" max="-280"/>
+		<attack name="PyriacBeastling" interval="2000" chance="35" range="7" target="0" min="-75" max="-165">
+		</attack>
+		<attack name="physical" interval="1000" chance="10" range="7" min="-46" max="-174">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="224" defense="112">
+	<defense name="speed" interval="1000" chance="10" speedchange="500" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="3" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="2216" chance="750"/><!--health ring-->
+		<item id="2448" chance="2850"/><!--studded club-->
+		<item id="2402" chance="550"/><!--silver dagger atk 54-->
+		<item id="2386" chance="550"/><!--axe atk 50-->
+	</loot>
+</monster>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Huge Waste Glob" namedescription="a huge waste glob" race="venom" experience="742" speed="220" manacost="600">
+	<health now="400" max="400"/>
+	<look type="238" corpse="6532"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-100" max="-200"/>
+		<attack name="poisonfield" interval="2000" chance="37" range="7" min="-50" max="-120">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="SmallPoisonExplosion" interval="3000" chance="50" min="-35" max="-100"/>
+	</attacks>
+	<defenses armor="240" defense="120"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-20"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="100"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="95" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="90" chance="20000"/><!-- gold coin -->
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+		<item id="2216" chance="400"/><!--health ring-->
+		<item id="2402" chance="600"/><!--sword-->
+		<item id="10557" chance="1000"/><!--misc-->
+		<item id="2182" chance="800"/>
+	</loot>
+</monster>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Apprentice of Ishum" namedescription="a apprentice of ishum" race="blood" experience="3322" speed="374" manacost="1245">
+	<health now="8300" max="8300"/>
+	<look type="145" head="94" body="113" legs="114" feet="0" addons="3" corpse="6080"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-207" max="-415"/>
+	</attacks>
+	<defenses armor="332" defense="166"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="4" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2191" chance="740"/><!--dragon breath-->
+		<item id="8704" countmax="4" chance="7000"/><!-- hp pot -->
+		<item id="2260" countmax="5" chance="18750"/><!-- blank rune -->	
+	<item id="2456" chance="790"/><!--bow-->		
+		<item id="7620" countmax="6" chance="9000"/><!-- mana pot -->
+	</loot>
+</monster>

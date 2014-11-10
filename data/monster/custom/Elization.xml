@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elization" nameDescription="an elization" race="blood" experience="137" speed="136" manacost="270">
+	<health now="180" max="180"/>
+	<look type="364" corpse="8964"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-45" max="-90"/>	
+		<attack name="physical" interval="2000" chance="50" range="7" target="1" min="-20" max="-45">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>		
+	</attacks>
+	<defenses armor="54" defense="36">
+		<defense name="healing" interval="2000" chance="25" min="0" max="90">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="50"/>
+		<element holyPercent="50"/>
+		<element energyPercent="-5"/>
+		<element physicalPercent="10"/>
+		<element icePercent="10"/>
+		<element deathPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="2500" chance="9">
+	</voices>
+	<loot>
+	</loot>
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sophie" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="140" head="79" body="96" legs="20" feet="0" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hey there |PLAYERNAME|! My father, the major, collects various objects found through out this world. Want to {trade}? I will only buy from you."/>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_sellable" value="wolf paw, 5897, 25;dheister leather, 5878, 45;bear paw, 5896, 35;troll hair, 10606, 60;sword scabbard, 12449, 65;grub horn, 11192, 70;giant eye, 11197, 85;honeycomb, 5902, 35;poisonous slime, 10557, 100"/>
+	</parameters>
+</npc>

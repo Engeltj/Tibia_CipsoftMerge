@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Risen Warrior" namedescription="a risen warrior" race="blood" experience="3161" speed="370" manacost="1215">
+	<health now="8100" max="8100"/>
+	<look type="298" corpse="5972"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-202" max="-405"/>
+		<attack name="risenwarrior" interval="2000" chance="35" min="-80" max="-155"/>
+		<attack name="physical" interval="2000" chance="20" range="5" target="1" min="-100" max="-280">
+			<attribute key="shootEffect" value="spear"/>
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="drunk" interval="5000" chance="35" range="5" target="1">
+			<attribute key="shootEffect" value="whirlwindaxe"/>
+			<attribute key="areaEffect" value="stun"/>
+		</attack>
+	</attacks>
+	<defenses armor="324" defense="162"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element holyPercent="-35"/>
+		<element icePercent="-5"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="20"/>
+		<element deathPercent="90"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+			<item id="2152" countmax="4" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="24000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="30000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2666" countmax="3" chance="57000"/><!-- meat -->
+		<item id="2544" countmax="15" chance="20000"/><!-- arrows -->	
+		<item id="2230" chance="49750"/><!-- bone -->
+		<item id="2394" chance="850"/><!--morning star-->
+		<item id="2643" chance="850"/><!--leath boots-->
+	</loot>
+</monster>

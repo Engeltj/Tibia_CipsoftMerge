@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Pyriac" namedescription="a pyriac" race="fire" experience="1712" speed="328" manacost="900">
+	<health now="6000" max="6000"/>
+	<look type="489" corpse="17252"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-150" max="-310"/>
+	<attack name="PyriacAtk" interval="3000" chance="25" min="-30" max="-240"/>
+		<attack name="physical" interval="2000" chance="20" range="5" min="-156" max="-179">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="10" range="7" radius="4" target="1" min="-70" max="-195">
+			<attribute key="shootEffect" value="explosion"/>
+			<attribute key="areaEffect" value="fireattack"/>
+		</attack>
+	</attacks>
+	<defenses armor="240" defense="120"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="4" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="8704" countmax="4" chance="9000"/><!-- hp pot -->
+		<item id="7620" countmax="4" chance="6000"/><!-- mana pot -->
+		<item id="2544" countmax="13" chance="18000"/><!-- arrows -->
+		<item id="2216" chance="750"/><!--health ring-->
+		<item id="2398" chance="2850"/><!--studded club-->
+		<item id="2384" chance="550"/><!--rapier-->
+		<item id="2387" chance="550"/><!--doubleaxe-->
+	</loot>
+</monster>

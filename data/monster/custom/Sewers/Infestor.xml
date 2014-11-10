@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Infestor" namedescription="a infestor" race="venom" experience="991" speed="240" manacost="690">
+	<health now="460" max="460"/>
+	<look type="499" corpse="17429"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-115" max="-230"/>
+		<attack name="PoisonWhirlwind" interval="2000" chance="20" min="-55" max="-95"/>
+		<attack name="BubbleExplosionWave" interval="3000" chance="25" min="-40" max="-120"/>
+	</attacks>
+	<defenses armor="276" defense="138">
+		<defense name="healing" interval="3000" chance="20" min="1" max="200">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-20"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="100"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2148" countmax="95" chance="20000"/><!-- gold coin -->
+		<item id="2152" countmax="1" chance="4000"/><!-- platnum -->
+		<item id="8704" countmax="2" chance="8000"/><!-- hp pot -->
+		<item id="7620" countmax="2" chance="5000"/><!-- mana pot -->
+		<item id="2216" chance="450"/><!--health ring-->
+		<item id="2404" chance="750"/><!--34 atk knife-->
+		<item id="2655" chance="750"/><!--red robne arm 36-->
+		<item id="10557" chance="1400"/><!--misc-->
+		<item id="2182" chance="800"/>
+	</loot>
+</monster>

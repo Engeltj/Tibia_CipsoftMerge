@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Tolomaq" namedescription="a tolomaq" race="blood" experience="1082" speed="304" manacost="720">
+	<health now="4800" max="4800"/>
+	<look type="40" corpse="5985"/>
+	<targetchange interval="2000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="0"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-120" max="-240"/>
+		<attack name="fire" interval="2000" chance="25" range="7" radius="2" target="1" min="-55" max="-100">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="25" range="7" radius="0" target="1" min="-30" max="-75">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="25" range="7" radius="6" target="1" min="-10" max="-50">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="192" defense="96">
+	<defense name="invisible" interval="5000" chance="30" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="100"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="2" chance="7000"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="14000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="20000"/><!-- gold coin -->
+		<item id="2655" chance="1050"/><!--red robne arm 36-->
+		<item id="2548" chance="50000"/><!-- Pitch Fork -->
+		<item id="2050" chance="10000"/><!-- torch -->
+		<item id="2216" chance="750"/><!--health ring-->
+		<item id="2260" chance="12750"/><!-- blank rune -->
+		<item id="2568" chance="9000"/><!-- cleaver -->
+		<item id="2191" chance="650"/><!-- wand of dragonbreath -->
+	</loot>
+</monster>

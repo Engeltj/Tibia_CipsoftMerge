@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Orkus Boatseyer" script="boat_ooth_main.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="133" head="20" body="39" legs="45" feet="7" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|. Would you like to travel to {main} for free?"/>
+	</parameters>
+	<!-- <voices>
+		<voice text="Level 20? Speak to me about a promotion (5k)" interval2="100" margin="1" yell="no"/>
+    </voices> -->
+</npc>
+
+<!--NEW LOOKTYPE PLS look type="154" head="57" body="119" legs="76" feet="110" addons="0"-->

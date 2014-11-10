@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ryhally Chief" namedescription="a ryhally chief" race="blood" experience="2017" speed="538" manacost="975">
+	<health now="6500" max="6500"/>
+	<look type="146" head="98" body="57" legs="132" feet="116" addons="3" mount="406" corpse="6080"/>
+	<targetchange interval="2000" chance="15"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-162" max="-325"/>
+		<attack name="melee" interval="2000" chance="10" min="-262" max="-525"/>
+		<attack name="physical" interval="1000" chance="15" range="7" min="-165" max="-225">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="20" range="7">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="260" defense="130">
+	<defense name="healing" interval="1000" chance="12" min="113" max="310">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>	
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<voices interval="4000" chance="50">
+		<voice sentence="Aku darthu lepemnu!"/>
+		<voice sentence="EEEEEEEEEEEEEEEEEEEYYYAAAAAA."/>
+		<voice sentence="Jeyrlu haeth."/>
+		<voice sentence="HOOOOAAAAAA"/>
+	</voices>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>

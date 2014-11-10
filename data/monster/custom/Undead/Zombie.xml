@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Zombie" namedescription="a zombie" race="blood" experience="351" speed="220" manacost="90">
+	<health now="400" max="400"/>
+	<look type="18" corpse="5976"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-40" max="-160"/>
+	</attacks>
+	<defenses armor="24" defense="12"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="45" chance="14750"/><!-- gold coin -->
+		<item id="5913" chance="1000"/><!-- brown piece of cloth -->
+		<item id="2403" chance="15250"/><!-- knife -->
+		<item id="2168" chance="300"/><!-- life ring -->
+		<item id="2229" countmax="2" chance="1500"/><!-- skull -->
+		<item id="2050" chance="7850"/><!-- torch -->
+		<item id="3976" countmax="6" chance="47500"/><!-- worm -->
+	</loot>
+</monster>

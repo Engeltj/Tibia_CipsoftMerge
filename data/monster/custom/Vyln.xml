@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vyln" namedescription="a vyln" race="blood" experience="497" speed="274" manacost="495">
+	<health now="330" max="330"/>
+	<look type="15" corpse="5960"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-82" max="-165"/>
+		<attack name="physical" interval="2000" chance="21" min="-60" max="-110" radius="4">
+			<attribute key="areaEffect" value="groundshaker"/>
+		</attack>
+		<attack name="physical" interval="1500" chance="27" range="7" min="-85" max="-120">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+	</attacks>
+	<defenses armor="132" defense="66"/>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2148" countmax="60" chance="15000"/><!-- gold coin -->
+		<item id="2642" chance="700"/><!-- 1stshoes -->
+		<item id="2148" countmax="35" chance="15000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="8000"/><!-- plat coin -->
+		<item id="10606" chance="1500"/><!-- misc -->
+		<item id="2666" chance="11750"/><!-- meat -->
+			<item id="2456" chance="790"/><!--bow-->
+	</loot>
+</monster>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gnoll" nameDescription="a gnoll" race="blood" experience="22" speed="216" manacost="120">
+	<health now="80" max="80"/>
+	<look type="297" corpse="6002"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-20" max="-50"/>
+		<attack name="physical" interval="2000" chance="25" range="7" min="-0" max="-20">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" range="7" min="-5" max="-20">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="25" range="3" target="1" min="-10" max="-30">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="24" defense="16">
+		<defense name="healing" interval="2000" chance="25" min="3" max="20">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>	
+		<defense name="speed" interval="2000" chance="25" speedchange="60" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>	
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="9">
+		<voice sentence="Shiny, Shiny!"/>
+		<voice sentence="You mean!"/>
+		<voice sentence="All mine!"/>
+		<voice sentence="Uhh!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="25" chance="25000" /> <!-- gold -->
+		<item id="2676" chance="50000" /><!-- banana -->
+		<item id="2388" chance="3000" /><!-- lvl 1 axe -->
+		<item id="13298" chance="300" /><!-- carrot on a stick -->
+			<item id="2456" chance="790"/><!--bow-->
+	</loot>
+		
+</monster>
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ishum Cultist" namedescription="a ishum cultist" race="blood" experience="3656" speed="382" manacost="1305">
+	<health now="8700" max="8700"/>
+	<look type="324" head="0" body="38" legs="132" feet="15" addons="2" corpse="6081"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-217" max="-435"/>
+		<attack name="ishum2" interval="2000" chance="25" min="-160" max="-360"/>
+		<attack name="fire" interval="2000" chance="17" length="8" spread="3" min="-180" max="-220">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="17" min="-40" max="-150" radius="7" >
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+	</attacks>
+	<defenses armor="348" defense="174">
+	<defense name="healing" interval="1000" chance="7" min="234" max="426">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		</defenses>
+	<elements>
+		<element earthPercent="0"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="0"/>
+		<element physicalPercent="0"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<item id="2152" countmax="5" chance="7800"/><!-- plat coin -->
+		<item id="2148" countmax="100" chance="34000"/><!-- gold coin -->
+		<item id="2148" countmax="99" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="12000"/><!-- gold coin -->
+		<item id="2191" chance="740"/><!--dragon breath-->
+		<item id="13756" chance="690"/><!--magic cap, fire resist-->
+		<item id="8704" countmax="4" chance="7000"/><!-- hp pot -->
+		<item id="2260" countmax="5" chance="18750"/><!-- blank rune -->		
+		<item id="7620" countmax="6" chance="9000"/><!-- mana pot -->
+	</loot>
+</monster>

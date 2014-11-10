@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Alligator" namedescription="a alligator" race="blood" experience="1276" speed="312" manacost="780">
+	<health now="520" max="520"/>
+	<look type="119" corpse="6046"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-130" max="-260"/>
+		<attack name="melee" interval="1000" chance="8" min="-185" max="-290"/>
+		<attack name="physical" interval="2000" chance="17" length="6" spread="3" min="-65" max="-125">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="208" defense="104">
+	<defense name="speed" interval="1000" chance="15" speedchange="200" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+	</defense>
+	<defense name="healing" interval="1000" chance="15" min="40" max="90">
+			<attribute key="areaEffect" value="blueshimmer"/>
+	</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20"/>
+		<element icePercent="0"/>
+		<element energyPercent="0"/>
+		<element firePercent="-25"/>
+		<element physicalPercent="-5"/>
+		<element poisonPercent="0"/>
+	</elements>
+	<loot>
+		<!-- <item id="" chance="" /> -->
+	</loot>
+</monster>
