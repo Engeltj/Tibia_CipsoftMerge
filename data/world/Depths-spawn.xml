@@ -1094,7 +1094,7 @@
 		<monster name="Cerberus" x="-2" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2137" centery="2212" centerz="7" radius="2">
-		<npc name="Gravedigger" x="0" y="0" z="7" spawntime="60" />
+		<monster name="Gravedigger" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="2163" centery="2212" centerz="7" radius="5" />
 	<spawn centerx="2306" centery="2212" centerz="7" radius="3">
@@ -3047,9 +3047,9 @@
 	</spawn>
 	<spawn centerx="2380" centery="2264" centerz="8" radius="5">
 		<monster name="Rat" x="-4" y="-4" z="8" spawntime="60" />
-		<monster name="Ace" x="0" y="-4" z="8" spawntime="60" />
-		<monster name="Filth Globule" x="4" y="-4" z="8" spawntime="60" />
+		<monster name="Filth Globule" x="0" y="-4" z="8" spawntime="60" />
 		<monster name="Dheister" x="-4" y="4" z="8" spawntime="60" />
+		<monster name="Ace" x="0" y="4" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="2175" centery="2267" centerz="8" radius="5">
 		<monster name="Ace" x="0" y="-4" z="8" spawntime="60" />
